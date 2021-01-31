@@ -77,8 +77,8 @@ static unsigned int cursorthickness = 2;
  *    Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.
  * 0: disable (render all U25XX glyphs normally from the font).
  */
-const int boxdraw = 0;
-const int boxdraw_bold = 0;
+const int boxdraw = 1;
+const int boxdraw_bold = 1;
 
 /* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
 const int boxdraw_braille = 0;
@@ -115,25 +115,27 @@ static const char *colorname[] = {
   [0] = "#161616", /* black   */
   [1] = "#cb712a", /* red     */
   [2] = "#cc7c34", /* green   */
-  [3] = "#c38e45", /* yellow  */
+  [3] = "#dfaf52", /* yellow  */
   [4] = "#767b6f", /* blue    */
   [5] = "#9fafaf", /* magenta */
-  [6] = "#86a3a4", /* cyan    */
+  [6] = "#647caf", /* cyan    */
   [7] = "#cad7ca", /* white   */
 
   /* 8 bright colors */
   [8]  = "#161616", /* black   */
   [9]  = "#cb712a", /* red     */
   [10] = "#cc7c34", /* green   */
-  [11] = "#c38e45", /* yellow  */
+  [11] = "#dfaf52", /* yellow  */
   [12] = "#767b6f", /* blue    */
   [13] = "#abbcbc", /* magenta */
-  [14] = "#87a4a5", /* cyan    */
+  [14] = "#647caf", /* cyan    */
   [15] = "#cad7ca", /* white   */
 
   /* special colors */
   [256] = "#161616", /* background */
   [257] = "#767b6f", /* foreground */
+  [254] = "#647caf",
+  [255] = "#222222",
 };
 
 /*
