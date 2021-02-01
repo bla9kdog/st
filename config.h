@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "JetBrainsMono Nerd Font Mono:pixelsize=26:antialias=true:autohint=true";
-static int borderpx = 20;
+static int borderpx = 15;
 /* disable bold, italic and roman fonts globally */
 int disablebold = 1;
 int disableitalic = 1;
@@ -20,7 +20,7 @@ int disableroman = 1;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/zsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
